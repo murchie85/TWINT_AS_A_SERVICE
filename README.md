@@ -2,6 +2,9 @@
 
 ![WORLD](https://murchie85.github.io/images/bg.jpg)
 
+## SET UP IN 3 STEPS 
+ 
+ 
 1. Clone this repo and cd into it 
 2. `docker-compose up -d`
 3. Go make a cup of tea, come back and check everything works by going to `localhost:9200` for elastic or `localhost:5601` for kibana
