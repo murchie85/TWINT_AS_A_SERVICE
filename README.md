@@ -4,7 +4,7 @@
 
 ## SET UP IN 3 STEPS 
  
- 
+
 1. Clone this repo and cd into it 
 2. `docker-compose up -d`
 3. Go make a cup of tea, come back and check everything works by going to `localhost:9200` for elastic or `localhost:5601` for kibana
@@ -29,6 +29,8 @@ twint -u realDonaldTrump  --stats -es elasticsearch:9200 --limit 50
 twint -u realDonaldTrump  --stats --limit 50
 ```
 
+Now lets prepare Kibana so you can visualzie it:  
+ 
+Go to `Management tab`, Index Patterns, Create Index Pattern, Index Pattern: twint and choose datestamp as time field; 
 
-
-Powered by (twint)[https://github.com/twintproject/twint]
+Powered by [twint](https://github.com/twintproject/twint)
