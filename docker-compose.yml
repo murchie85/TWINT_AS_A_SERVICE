@@ -1,0 +1,24 @@
+version: '3'
+services:
+  elasticsearch:
+    image: "elasticsearch:7.2.0"
+    ports:
+      - "9300:9300"
+      - "9200:9200"
+    volumes:
+      - .:/code
+    environment:
+      - discovery.type=single-node
+  kibana:
+    image: "kibana:6.8.1"
+    ports:
+      - "5601:5601"
+    volumes:
+      - .:/code
+    links:
+      - "elasticsearch:elasticsearch"
+  twint:
+    build: .
+    links:
+      - "elasticsearch:elasticsearch"
+    command: tail -F anything
