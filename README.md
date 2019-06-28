@@ -40,12 +40,12 @@ Go to `Management tab`, Index Patterns, Create Index Pattern, Index Pattern: twi
 
 # READY TO GO DASHBOARD
 
-![sample](sample.PNG)
+![sample](sample.png)
 
 To use them you have just to import them: go to Management tab (the gear), Saved Objects, Import and then select visualizations.json, repeat the process for dashboard.json. After this just to go Dashboard tab and click on Twint Dashboard to see the cool visualizations. Don't forget to ensure the time filter on kibana is longer than the last 15 minutes.
 
 
-
+##
 
 
 
