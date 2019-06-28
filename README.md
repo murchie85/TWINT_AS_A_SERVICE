@@ -15,9 +15,9 @@ You are done :)
 
 # Twitter profiling
 
-1. If you want to do Twitter analytics grab CONTAINER ID for twint_as_a_service_compose_twint_1
+1. If you want to do Twitter analytics, run `docker ps` and copy the *CONTAINER ID* for the twint container
 2. SSH onto the container `docker exec -it CONTAINER ID bash `
-3. and run the below commands to populate elastic (change Trump to any twitter handle as many times as you like) 
+3. Once in,  run the below commands (bulk copy and paste is fine) to populate elastic, you can run as many times as you like with any twitter handle.
 
 
 ```
