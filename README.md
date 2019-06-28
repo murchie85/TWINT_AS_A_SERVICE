@@ -34,10 +34,21 @@ Now lets prepare Kibana so you can visualzie it:
 Go to `Management tab`, Index Patterns, Create Index Pattern, Index Pattern: twinttweets and choose datestamp as time field; 
 
 ![kibana](https://camo.githubusercontent.com/d18625b236a9df353326d70e9ab4a8a95ab918ae/68747470733a2f2f692e696d6775722e636f6d2f6844543941446b2e706e67)
-Powered by [twint](https://github.com/twintproject/twint)
+  
 
 ![kibana2](https://camo.githubusercontent.com/ac1d897f6ffdb1568855341e9d420f4046101016/68747470733a2f2f692e696d6775722e636f6d2f564b79324a76782e706e67)
 
 # READY TO GO DASHBOARD
 
-To use them you have just to import them: go to Management tab (the gear), Saved Objects, Import and then select visualizations.json, repeat the process for dashboard.json. After this just to go Dashboard tab and click on Twint Dashboard.
+![sample](sample.PNG)
+
+To use them you have just to import them: go to Management tab (the gear), Saved Objects, Import and then select visualizations.json, repeat the process for dashboard.json. After this just to go Dashboard tab and click on Twint Dashboard to see the cool visualizations. Don't forget to ensure the time filter on kibana is longer than the last 15 minutes.
+
+
+
+
+
+
+
+
+Powered by [twint](https://github.com/twintproject/twint)
