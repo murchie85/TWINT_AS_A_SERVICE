@@ -18,6 +18,7 @@ services:
     links:
       - "elasticsearch:elasticsearch"
   twint:
+    container_name: twint_app
     build: .
     links:
       - "elasticsearch:elasticsearch"
