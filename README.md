@@ -4,6 +4,7 @@
 
 ## SET UP IN 3 STEPS 
  
+[requirements](#REQUIREMENTS)  
 
 1. Clone this repo and cd into it 
 2. run `docker-compose up -d`
@@ -14,17 +15,17 @@
   
 # Twitter Bulk profiling
 
-*(If this approach doesn't work, go [here](#MANUAL-TWITTER-PROFILING) - which is manual process)*
+*(If this approach doesn't work or you are using windows, go [here](#MANUAL-TWITTER-PROFILING) - which is manual process)*
 
 1. Make sure you are at base directory (where you can see injector.sh)
 2. Run `chmod u+x injector.sh` 
 3. Run `python inject_data.py` and follow the steps *(I suggest only chose 1 profile to scan initially)*
 
-Now lets prepare Kibana so you can visualzie it:  
+Now lets prepare Kibana so you can visualize it:  
 
 # FINAL STEP - VISUALIZATION 
 
-Go to `Management tab`, Index Patterns, Create Index Pattern, Index Pattern: twinttweets and choose datestamp as time field; 
+Put **http://localhost:5601** in your browser then go to `Management tab`, Index Patterns, Create Index Pattern, Index Pattern: twinttweets and choose datestamp as time field; 
 
 ![kibana](https://camo.githubusercontent.com/d18625b236a9df353326d70e9ab4a8a95ab918ae/68747470733a2f2f692e696d6775722e636f6d2f6844543941446b2e706e67)
   
@@ -60,7 +61,12 @@ twint -u elonmusk  --stats --limit 50
 
 Now lets prepare Kibana so you can visualzie it (Jump back to visualization header)  
 
+# REQUIREMENTS
 
+- Python
+- Docker
+
+This is designed for Mac/Linux, but you can run it on windows using the manual injection step
 
 
 
