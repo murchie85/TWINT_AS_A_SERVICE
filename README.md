@@ -14,15 +14,16 @@
   
 # Twitter Bulk profiling
 
-**(If this approach doesn't work, skip to the next heading - which is manual process)**
+*(If this approach doesn't work, go [here](#MANUAL-TWITTER-PROFILING) - which is manual process)*
 
 1. Make sure you are at base directory (where you can see injector.sh)
 2. Run `chmod u+x injector.sh` 
 3. Run `python inject_data.py` and follow the steps *(I suggest only chose 1 profile to scan initially)*
 
-
 Now lets prepare Kibana so you can visualzie it:  
- 
+
+# FINAL STEP - VISUALIZATION 
+
 Go to `Management tab`, Index Patterns, Create Index Pattern, Index Pattern: twinttweets and choose datestamp as time field; 
 
 ![kibana](https://camo.githubusercontent.com/d18625b236a9df353326d70e9ab4a8a95ab918ae/68747470733a2f2f692e696d6775722e636f6d2f6844543941446b2e706e67)
@@ -33,7 +34,7 @@ Go to `Management tab`, Index Patterns, Create Index Pattern, Index Pattern: twi
 
 
 
-# Twitter profiling
+# MANUAL TWITTER PROFILING
 
 1. If you want to do Twitter analytics, run `docker ps` and copy the *CONTAINER ID* for the twint container
 2. SSH onto the container `docker exec -it CONTAINER ID bash `
