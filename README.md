@@ -48,6 +48,9 @@ To use them you have just to import them: go to Management tab (the gear), Saved
 ##
 
 
+# BULK INJECTION 
+
+1. Run `chmod u+x injector.sh`
 
 
 
