@@ -43,6 +43,6 @@ for p in range(0,profiles) :
 	print('')
 	if answer =='Y' or answer =='y':
 		print('scanning.....')
-		subprocess.call(['bash','/Users/adammcmurchie/projects/docker/twint_as_a_service/injector.sh',target, depth])
+		subprocess.call(['bash','injector.sh',target, depth])
 	else:
 		print('Skipping - did not enter y or Y')
